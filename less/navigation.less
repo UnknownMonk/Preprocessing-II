@@ -1,1 +1,28 @@
 // Navigation Styles here
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: dashed 2px lightgray;
+  h1 {
+    margin: 3rem 10rem;
+  }
+  nav {
+    margin-right: 10rem;
+  }
+  a {
+    margin: 0 3rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: lightgrey;
+    }
+  }
+}
