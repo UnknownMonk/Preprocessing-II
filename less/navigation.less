@@ -15,6 +15,9 @@ body {
     width: 200px;
     height: 100px;
     .animation(funbuss, 10s);
+    @media @mobile {
+      display: none;
+    }
   }
 
   @keyframes funbuss {
@@ -25,6 +28,7 @@ body {
     to {
       position: absolute;
       left: 1800px;
+      display: none;
     }
   }
 }

@@ -190,6 +190,11 @@ body .funbuss {
   height: 100px;
   animation: funbuss 10s;
 }
+@media (max-width: 500px) {
+  body .funbuss {
+    display: none;
+  }
+}
 @keyframes funbuss {
   from {
     position: absolute;
@@ -198,6 +203,7 @@ body .funbuss {
   to {
     position: absolute;
     left: 1800px;
+    display: none;
   }
 }
 header {
