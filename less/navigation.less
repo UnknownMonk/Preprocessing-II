@@ -7,6 +7,26 @@ body {
   margin: 4rem auto;
   background: white;
   border: 1px solid black;
+
+  .funbuss {
+    position: absolute;
+    z-index: 10px;
+    left: 0px;
+    width: 200px;
+    height: 100px;
+    .animation(funbuss, 10s);
+  }
+
+  @keyframes funbuss {
+    from {
+      position: absolute;
+      left: 0px;
+    }
+    to {
+      position: absolute;
+      left: 1800px;
+    }
+  }
 }
 
 header {

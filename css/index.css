@@ -182,6 +182,24 @@ body {
   background: white;
   border: 1px solid black;
 }
+body .funbuss {
+  position: absolute;
+  z-index: 10px;
+  left: 0px;
+  width: 200px;
+  height: 100px;
+  animation: funbuss 10s;
+}
+@keyframes funbuss {
+  from {
+    position: absolute;
+    left: 0px;
+  }
+  to {
+    position: absolute;
+    left: 1800px;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -218,7 +236,7 @@ header a:hover {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -271,7 +289,7 @@ header a:hover {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 @media (max-width: 500px) {
   .home .inverse-content {
@@ -305,7 +323,7 @@ header a:hover {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
