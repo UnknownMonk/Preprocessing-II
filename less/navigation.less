@@ -1,1 +1,68 @@
 // Navigation Styles here
+html {
+  background: lightgrey;
+}
+body {
+  max-width: 1000px;
+  margin: 4rem auto;
+  background: white;
+  border: 1px solid black;
+
+  .funbuss {
+    position: absolute;
+    z-index: 10px;
+    left: -300px;
+    width: 200px;
+    height: 200px;
+    .animation(funbuss, 20s);
+    @media @mobile {
+      display: none;
+    }
+  }
+
+  @keyframes funbuss {
+    from {
+      position: absolute;
+      left: -300px;
+    }
+    to {
+      position: absolute;
+      left: 1800px;
+      display: none;
+    }
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: dashed 2px lightgray;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    margin: 3rem 10rem;
+  }
+  nav {
+    margin-right: 10rem;
+
+    @media @mobile {
+      display: block;
+      margin: 1rem auto;
+    }
+  }
+  a {
+    margin: 0 2.5rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: lightgrey;
+    }
+  }
+}
